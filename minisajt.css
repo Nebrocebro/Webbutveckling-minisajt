@@ -1,0 +1,855 @@
+@keyframes fadeInAnimation {
+    from{opacity: 0.75;}
+    to{opacity: 1;}
+}
+
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 5px); }
+    100%   { transform: translate(0, -0px); }
+}
+
+@keyframes floating2 {
+    0% { margin-right: 0px; }
+    50% { margin-left: 7.5px; }
+    100% { margin-right: -0px; }
+}
+
+@keyframes floating3 {
+    0% { margin-left: 0px; }
+    50% { margin-right: 7.5px; }
+    100% { margin-left: -0px; }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.body {
+    width: 100%;
+    height: 100%;
+}
+
+html, body {
+    background: linear-gradient(#FF7088, #FFADBB) !important;
+}
+
+/* The following section is mostly for the home pages nav. */
+
+  nav {
+    display: flex;
+    height: 10vh;
+    width: 100%;
+  }
+
+nav a {
+    display: flex;
+    color: whitesmoke;
+    height: 100%;
+    text-decoration: underline 0.5vh rgba(255, 255, 255, 0);
+    transition: text-decoration-color 0.5s;
+}
+
+#website-logo {
+    height: 10vh;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    box-shadow: 0px 0px 10px grey;
+    height: 10vh;
+    width: 100%;
+    background: linear-gradient( #41789F, #6097BE);
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.menu-item {
+    display: flex;
+    font-family: "Chango", sans-serif;
+    align-content: center;
+    font-size: 2vw;
+    font-weight: bold;
+    opacity: 0.75;
+}
+
+nav a:hover {
+    transition: 1s; opacity: 1;
+    text-decoration-color: rgba(255, 255, 255, 1);
+}
+
+.menu-item:hover {
+    transition: 1s; opacity: 1;
+}
+
+/* This section is mainly for the content below the home nav such as headlines etc. */
+
+.intro-headline1 {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+    width: 35vw;
+    height: 10vw;
+    padding: 2vw;
+    font-family: Source Sans Pro, sans-serif;
+    font-size: 2vw;
+    background-color: whitesmoke;
+    border: solid whitesmoke;
+    border-radius: 12.5vw;
+    box-shadow: 0px 5px 10px grey;
+}
+
+.circlemenu1 {
+    margin: 0 auto 0;
+    margin-top: 2vh;
+    font-family: Skranji, sans-serif;
+    width: 15vw;
+    border-radius: 1vw;
+    text-align: center;
+    padding: 2vw;
+    font-size: 2vw;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+    transition: box-shadow 0.3s ease-in-out;
+    background: radial-gradient(ellipse, #1FB1D6, #C2F3FE);
+}
+
+.circlemenu1:hover {
+    box-shadow: 0 5px 12px rgba(0,0,0,0.3);
+}
+
+.circleitem1 {
+    font-family: Source Sans Pro, sans-serif;
+    background-clip: border-box;
+    margin-left: 25vw;
+    margin-top: 1.5vh;
+    width: 7.5vw;
+    height: 7.5vw;
+    line-height: 7.5vw;
+    border: solid black 2.5px;
+    border-radius: 3.75vw;
+    text-align: center;
+    background-image:
+    linear-gradient(
+        rgba(128, 128, 128, 0.40), 
+        rgba(128, 128, 128, 0.40)
+      ),
+        url(images/calzone1.png);
+    background-size: 150%;
+    color: white;
+    text-shadow: black 0px 0px 5px;
+    font-size: 1.5vw;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+    transition: box-shadow 0.3s ease-in-out;
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.circleitem1:hover {
+    box-shadow: 0 5px 12px rgba(0,0,0,0.3);
+}
+
+.circleitem2 {
+    font-family: Source Sans Pro, sans-serif;
+    background-clip: border-box;
+    margin-left: 10vw;
+    margin-top: 0.5%;
+    width: 10vw;
+    height: 10vw;
+    line-height: 10vw;
+    border: solid black 2.5px;
+    border-radius: 5vw;
+    text-align: center;
+    background-image:
+    linear-gradient(
+        rgba(128, 128, 128, 0.30), 
+        rgba(128, 128, 128, 0.30)
+      ),
+        url(images/halloumiburger.png);
+    background-size: 100%;
+    color: white;
+    text-shadow: black 0px 0px 5px;
+    font-size: 1.25vw;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+    transition: box-shadow 0.3s ease-in-out;
+    animation-name: floating;
+    animation-duration: 3.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.circleitem2:hover {
+    box-shadow: 0 5px 12px rgba(0,0,0,0.3);
+}
+
+.circleitem-a {
+    text-decoration: none;
+    color: white;
+}
+
+.circleitem3 {
+    font-family: Source Sans Pro, sans-serif;
+    background-clip: border-box;
+    margin-left: 19vw;
+    margin-top: 1%;
+    width: 12.5vw;
+    height: 12.5vw;
+    line-height: 12.5vw;
+    border: solid black 2.5px;
+    border-radius: 6.25vw;
+    text-align: center;
+    background-image:
+    linear-gradient(
+        rgba(128, 128, 128, 0.30), 
+        rgba(128, 128, 128, 0.30)
+      ),
+        url(images/pannacotta.jpg);
+    background-size: 150%;
+    color: white;
+    text-shadow: black 0px 0px 5px;
+    font-size: 2.5vw;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+    transition: box-shadow 0.3s ease-in-out;
+    animation-name: floating;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.circleitem3:hover {
+    box-shadow: 0 5px 12px rgba(0,0,0,0.3);
+}
+
+.rectanglemenu1 {
+    margin: 0 auto 0;
+    margin-top: 2vh;
+    font-family: Skranji, sans-serif;
+    width: 15vw;
+    border-radius: 1vw;
+    text-align: center;
+    padding: 2vw;
+    font-size: 2vw;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+    transition: box-shadow 0.3s ease-in-out;
+    background: radial-gradient(ellipse, #1FB1D6, #C2F3FE);
+}
+.rectanglemenu1:hover {
+    box-shadow: 0 5px 12px rgba(0,0,0,0.3);
+}
+.rectangleitem1 {
+    font-family: MuseoModerno, sans-serif;
+    margin-top: 2vh;
+    width: 30vw;
+    height: 5vw;
+    line-height: 5vw;
+    border: solid black 2.5px;
+    border-radius: 7.5vw;
+    background: linear-gradient( #A742F0,#CA8EF5);
+    color: white;
+    font-size: 2vw;
+    text-align: center;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.15);
+    transition: box-shadow 0.3s ease-in-out;
+    animation-name: floating2;
+    animation-duration: 2.75s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.rectangleitem1:hover {
+    box-shadow: 0 5px 12px rgba(0,0,0,0.3);
+}
+
+.rectangleitem2 {
+    font-family: MuseoModerno, sans-serif;
+    margin-top: 1.5vh;
+    width: 30vw;
+    height: 5vw;
+    line-height: 5vw;
+    border: solid black 2.5px;
+    border-radius: 7.5vw;
+    background: linear-gradient( #A742F0,#CA8EF5);
+    color: white;
+    font-size: 2vw;
+    text-align: center;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.15);
+    transition: box-shadow 0.3s ease-in-out;
+    animation-name: floating3;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.rectangleitem2:hover {
+    box-shadow: 0 5px 12px rgba(0,0,0,0.3);
+}
+
+.rectangleitem3 {
+    font-family: MuseoModerno, sans-serif;
+    margin-top: 1.5vh;
+    width: 30vw;
+    height: 5vw;
+    line-height: 5vw;
+    border: solid black 2.5px;
+    border-radius: 7.5vw;
+    background: linear-gradient( #A742F0,#CA8EF5);
+    text-align: center;
+    color: white;
+    font-size: 2vw;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.15);
+    transition: box-shadow 0.3s ease-in-out;
+    animation-name: floating2;
+    animation-duration: 2.25s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.rectangleitem3:hover {
+    box-shadow: 0 5px 12px rgba(0,0,0,0.3);
+}
+
+.maincontainer {
+    display: flex;
+    width: 95vw;
+    height: max-content;
+    padding-bottom: 2vw;
+    margin-bottom: 5vw;
+    margin-left: 2.5vw;
+    margin-right: 2.5vw;
+    box-shadow: 0px 0px 10px black;
+    margin-top: 2.5vw;
+    background-color: #C2F3FE;
+    border-radius: 2vw;
+}
+
+.circlecontainer {
+    display: block;
+    width: 50%;
+}
+
+.rectanglecontainer1 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+}
+
+.maincontainer2 {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2.5vw;
+    margin-bottom: 2.5vw;
+    margin-top: 2.5vw;
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 0px 10px black;
+    border-radius: 2vw;
+    background-color: antiquewhite;
+}
+
+.largeitem1 {
+    background: url(images/focacciasandwich.jpg);
+    background-position: center;
+    background-clip: border-box;
+    width: 25vw;
+    height: 16vw;
+    background-size: 100%;
+    border: solid black 3px;
+    transition: box-shadow 0.3s ease-in-out;
+    position: relative;
+}
+
+.largeitem1:hover {
+    box-shadow: 0 5px 12px rgba(0,0,0,0.3);
+}
+
+.largeitemdescription1 {
+    font-family: Source Sans Pro, sans-serif;
+    font-size: 2vw;
+    width: fit-content;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.85);
+    color: black;
+    text-decoration: none;
+    text-align: center;
+}
+
+.fa-bread-slice {
+    color: #c68958;
+}
+
+.largeitem2 {
+    background: url(images/lasagna.jpg);
+    background-position: center;
+    background-clip: border-box;
+    width: 25vw;
+    height: 16vw;
+    background-size: 125%;
+    border: solid black 3px;
+    transition: box-shadow 0.3s ease-in-out;
+    position: relative;
+}
+
+.largeitemdescription2 {
+    font-family: Source Sans Pro, sans-serif;
+    font-size: 2vw;
+    width: fit-content;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.85);
+    color: black;
+    text-decoration: none;
+    text-align: center;
+}
+
+.fa-kaaba {
+    color: #d8a91a;
+}
+
+.largeitem2:hover {
+    box-shadow: 0 5px 12px rgba(0,0,0,0.3);
+}
+
+.largeitem3 {
+    background: url(images/blabarsrulle.jfif);
+    background-position: center;
+    background-clip: border-box;
+    width: 25vw;
+    height: 16vw;
+    background-size: 100%;
+    border: solid black 3px;
+    transition: box-shadow 0.3s ease-in-out;
+    position: relative;
+}
+
+.fa-cookie-bite {
+    color: #8A84E2;
+}
+
+.largeitemdescription3 {
+    font-family: Source Sans Pro, sans-serif;
+    font-size: 2vw;
+    width: fit-content;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.85);
+    color: black;
+    text-decoration: none;
+    text-align: center;
+}
+
+.largeitem3:hover {
+    box-shadow: 0 5px 12px rgba(0,0,0,0.3);
+}
+
+.maincontainer3 {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2.5vw;
+    margin-bottom: 2.5vw;
+    margin-top: 2.5vw;
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 0px 10px black;
+    border-radius: 2vw;
+    background-color: antiquewhite;
+}
+
+.largeitem4 {
+    background: url(images/tacos.jpg);
+    background-position: center;
+    background-clip: border-box;
+    width: 25vw;
+    height: 16vw;
+    background-size: 100%;
+    border: solid black 3px;
+    transition: box-shadow 0.3s ease-in-out;
+    position: relative;
+}
+
+.largeitem4:hover {
+    box-shadow: 0 5px 12px rgba(0,0,0,0.3);
+}
+
+.largeitemdescription4 {
+    font-family: Source Sans Pro, sans-serif;
+    font-size: 2vw;
+    width: fit-content;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.85);
+    color: black;
+    text-decoration: none;
+    text-align: center;
+}
+
+.largeitem5 {
+    background: url(images/americanpancakes.jpg);
+    background-position: center;
+    background-clip: border-box;
+    width: 25vw;
+    height: 16vw;
+    background-size: 125%;
+    border: solid black 3px;
+    transition: box-shadow 0.3s ease-in-out;
+    position: relative;
+}
+
+.largeitemdescription5 {
+    font-family: Source Sans Pro, sans-serif;
+    font-size: 2vw;
+    width: fit-content;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.85);
+    color: black;
+    text-decoration: none;
+    text-align: center;
+}
+
+.largeitem5:hover {
+    box-shadow: 0 5px 12px rgba(0,0,0,0.3);
+}
+
+.largeitem6 {
+    background: url(images/smokedsalmon.jpg);
+    background-position: center;
+    background-clip: border-box;
+    width: 25vw;
+    height: 16vw;
+    background-size: 100%;
+    border: solid black 3px;
+    transition: box-shadow 0.3s ease-in-out;
+    position: relative;
+}
+
+.largeitemdescription6 {
+    font-family: Source Sans Pro, sans-serif;
+    font-size: 2vw;
+    width: fit-content;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.85);
+    color: black;
+    text-decoration: none;
+    text-align: center;
+}
+
+.largeitem6:hover {
+    box-shadow: 0 5px 12px rgba(0,0,0,0.3);
+}
+
+.gridheadline {
+    border: solid black 2px;
+    width: fit-content;
+    margin: 0 auto 0;
+    border-top-left-radius: 2.5vw;
+    border-top-right-radius: 2.5vw;
+    margin-bottom: 0;
+    padding: 1vw;
+}
+
+.gridcontainer {
+    display: flex;
+    width: 90vw;
+    height: fit-content;
+    margin: 0 auto 0;
+    position: relative;
+    justify-content: center;
+    border: solid black 2px;
+    box-shadow: 0px 5px 15px black;
+    border-radius: 5vw;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  /* Create two equal columns that sits next to each other */
+  .column {
+    display: flex;
+    flex: 50%;
+    padding: 0 4px;
+    justify-content: center;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: center;
+    width: 25vw;
+    height: auto;
+  }
+
+footer {
+    font-style: MuseoModerno, sans-serif;
+    color: white;
+    width: auto;
+    height: 250px;
+    margin-top: 150px;  
+    background-color: #FF5C77;
+    box-shadow: 0px 0px 10px black;
+    padding: 2.5vw;
+}
+
+.website-logo-footer {
+    width: 10vw;
+    float: right;
+    box-shadow: 0px 5px 10px black;
+}
+
+.contact-footer {
+    font-family: MuseoModerno, sans-serif;
+    font-size: 2vw;
+    color: white;
+    text-decoration: none;
+}
+
+.fa-phone {
+    color: white;
+    text-decoration: none;
+}
+
+.categories-footer {
+    font-family: MuseoModerno, sans-serif;
+    font-size: 2vw;
+    color: white;
+    text-decoration: none;
+}
+
+.pizza-footer {
+    font-family: MuseoModerno, sans-serif;
+    font-size: 2vw;
+    color: white;
+    text-decoration: none;
+}
+
+.fa-pizza-slice {
+    color: white;
+    text-decoration: none;
+}
+
+.neobild1 {
+    width: 10vw;
+    height: auto;
+    border: solid black 2px;
+    box-shadow: 0px 5px 15px black;
+}
+
+.warninggradient {
+    width: 100%;
+    height: 150px;
+    background: linear-gradient(#FF5C77, #FF5C77, black);
+    border-bottom: solid 2px black;
+}
+
+.warningcontainer {
+    display: block;
+    width: 100%;
+    height: 800px;
+    background: black;
+}
+
+.warningtext {
+    display: block;
+    width: 80vw;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2vw;
+    font-size: 5vw;
+    color: rgba(255, 255, 255, 0.7);
+    transform: scale(1, 1.5);
+}
+
+.warningimage {
+    display: block;
+    size: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    position: center;
+    margin-bottom: 0;
+}
+
+/* Smaller screens, smartphones etc. */
+@media screen and (max-width: 414px) and (min-width: 200px){
+
+    .menu-item {
+        font-size: 2.75vw;
+    }
+
+    .intro-headline1 {
+        width: 75vw;
+        height: 10vh;
+        font-size: 5vw;
+        padding: 4vw;
+    }
+
+    .circlemenu1 {
+        width: 25vw;
+        border-radius: 2vw;
+        font-size: 3vw;
+    }
+
+    .circleitem1 {
+        width: calc(7.5vw*1.5);
+        height: calc(7.5vw*1.5);
+        line-height: calc(7.5vw*1.5);
+        border-radius: calc(3.75vw*1.5);
+    }
+
+    .circleitem2 {
+        width: calc(10vw*1.5);
+        height: calc(10vw*1.5);
+        line-height: calc(10vw*1.5);
+        border-radius: calc(5vw*1.5);
+    }
+
+    .circleitem3 {
+        width: calc(12.5vw*1.5);
+        height: calc(12.5vw*1.5);
+        line-height: calc(12.5vw*1.5);
+        border-radius: calc(6.25vw*1.5);
+    }
+
+    .circleitem-a {
+        color: transparent;
+    }
+
+    .rectanglemenu1 {
+        width: 25vw;
+        border-radius: 2vw;
+        font-size: 3vw;
+    }
+
+    .rectangleitem1 {
+        font-size: 4vw;
+        width: 40vw;
+        height: fit-content;
+        padding: 1vw;
+    }
+
+    .rectangleitem2 {
+        font-size: 4vw;
+        width: 40vw;
+        height: fit-content;
+        padding: 1vw;
+    }
+
+    .rectangleitem3 {
+        font-size: 4vw;
+        width: 40vw;
+        height: fit-content;
+        padding: 1vw;
+    }
+    
+    .largeitem1 {
+        background: url(images/focacciasandwich.jpg);
+        background-position: center;
+        background-clip: border-box;
+        width: 25vw;
+        height: 16vw;
+        background-size: 100%;
+        border: solid black 3px;
+        transition: box-shadow 0.3s ease-in-out;
+        position: relative;
+    }
+    
+    .largeitem1:hover {
+        box-shadow: 0 5px 12px rgba(0,0,0,0.3);
+    }
+    
+    .largeitemdescription1 {
+        font-family: Source Sans Pro, sans-serif;
+        font-size: 3.75vw;
+        font-weight: bold;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.5);
+        color: rgba(0, 0, 0, 1);
+        text-decoration: none;
+        text-align: center;
+    }
+
+    .largeitemdescription2 {
+        font-family: Source Sans Pro, sans-serif;
+        font-size: 3.75vw;
+        font-weight: bold;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.5);
+        color: rgba(0, 0, 0, 1);
+        text-decoration: none;
+        text-align: center;
+    }
+
+    .largeitemdescription3 {
+        font-family: Source Sans Pro, sans-serif;
+        font-size: 3.5vw;
+        font-weight: bold;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.5);
+        color: rgba(0, 0, 0, 1);
+        text-decoration: none;
+        text-align: center;
+    }
+
+    .largeitemdescription4 {
+        font-family: Source Sans Pro, sans-serif;
+        font-size: 3.75vw;
+        font-weight: bold;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.5);
+        color: rgba(0, 0, 0, 1);
+        text-decoration: none;
+        text-align: center;
+    }
+
+    .largeitemdescription5 {
+        font-family: Source Sans Pro, sans-serif;
+        font-size: 3vw;
+        font-weight: bold;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.5);
+        color: rgba(0, 0, 0, 1);
+        text-decoration: none;
+        text-align: center;
+    }
+
+    .largeitemdescription6 {
+        font-family: Source Sans Pro, sans-serif;
+        font-size: 3vw;
+        font-weight: bold;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.5);
+        color: rgba(0, 0, 0, 1);
+        text-decoration: none;
+        text-align: center;
+    }
+
+}
